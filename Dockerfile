@@ -3,4 +3,6 @@
 FROM mysql/mysql-server:8.0.24
 
 COPY config/user.cnf /etc/mysql/my.cnf
+
+RUN mkdir -p /etc/mysql/mysql.conf.d
 COPY config/rj.cnf /etc/mysql/mysql.conf.d/rj.cnf
