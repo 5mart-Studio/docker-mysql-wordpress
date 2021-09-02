@@ -1,0 +1,4 @@
+[mysqld]
+log_bin =                           # turn off
+binlog_expire_logs_seconds = 86400  # 1 day
+max_binlog_size = 104857600         # 100M
